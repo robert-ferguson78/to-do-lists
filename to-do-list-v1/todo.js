@@ -13,7 +13,7 @@ function addTodo() {
   const todoText = document.getElementById("todo-id").value;
   const todo = {
     text: todoText,
-    textDate: new Date().toLocaleString()
+    textDate: new Date().toLocaleString("en-IE")
   };
   todoItems.push(todo);
   renderTodo(todo);
